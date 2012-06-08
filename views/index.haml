@@ -2,11 +2,32 @@
 
 %html
   %head
-    %title Which Way Should My Carseat Face?
-    %link{ :href => "/css/bootstrap.min.css", :rel => "stylesheet", :type => "text/css" }
+    %title Which Car Seat Do I Need?
+    %link{ :href => "/css/jquery-ui.css", :rel => "stylesheet", :type => "text/css" }
     %link{ :href => "/css/app.css", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href => "/css/bootstrap.min.css", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href => 'http://fonts.googleapis.com/css?family=Marko+One', :rel => 'stylesheet', :type => 'text/css' }
     %script{ :type => "text/javascript", :src => "/javascripts/jquery.min.js" }
-    %script{ :type => "text/javascript", :src => "/javascripts/bootstrap.min.js" }
+    %script{ :type => "text/javascript", :src => "/javascripts/jquery-ui.min.js" }
     %script{ :type => "text/javascript", :src => "/javascripts/app.js" }
   %body
-
+    #container
+      #centered
+        #title
+          %h1 Which Car Seat Do I Need?
+        %p
+          &nbsp;
+        #q1.question{ 'data-answer-yes' => 'under 2', 'data-answer-no' => '2 or older'}
+          %h2
+            Q: Is your child under 2 years old?
+        #q2.question.hidden{ 'data-answer-yes' => 'under 30 lb', 'data-answer-no' => 'at least 30 lb'}
+          %h2
+            Q: Does your child weigh less than 30 lb?
+        #answer.hidden
+          %h2
+            A: Rear!
+        %p
+          &nbsp;
+        %p#buttons
+          %button.btn.btn-large.btn-success#yes
+          %button.btn.btn-large#no
