@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+p { margin:5px 0 10px 0; }
+
+h1, h2 {
+  font-family: 'Marko One', serif !important;
+}
+#container {
+  background-color: #eee;
+  padding: auto auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+}
+#centered {
+  padding: 10% 0;
+  text-align: center;
+}
+h1 {
+  font-size: 10ex !important;
+  line-height: 2ex !important;
+  color: #bbb !important;
+}
+h2 {
+  font-size: 4ex !important;
+  line-height: 2ex !important;
+}
+.center {
+}
+.left {
+  float: left;
+}
+.clear {
+  clear: both;
+}
+.hidden {
+  display: none;
+}
+#yes, #no {
+  width: 200px;
+  height: 60px;
+  font-size: 4ex;
+}
+#buttons button {
+  margin: 2px 5px;
+}
